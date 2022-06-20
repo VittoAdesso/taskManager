@@ -15,6 +15,11 @@ import { RegisterPageComponent } from './components/pages/register-page/register
 import { NotFoundPageComponent } from './components/pages/not-found-page/not-found-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// module export components list type
+import { ListsModule } from './modules/lists/lists.module';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +32,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomePageComponent,
     LoginPageComponent,
     RegisterPageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, 
+    // personalizationModule to recicle
+    ListsModule
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

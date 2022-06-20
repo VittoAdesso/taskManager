@@ -1,0 +1,13 @@
+<button (click)="changeStatus()">
+    {{ charging ? 'Finish charged' : 'Start charged'}}
+</button>
+
+
+<ng-container *ngIf="!charging; else waitTemplate">
+    <p>Ready</p>
+</ng-container>
+
+<ng-template #waitTemplate>
+    <p>Charging...</p>
+    <p>Please wait to finish</p>
+</ng-template>
