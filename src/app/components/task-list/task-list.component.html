@@ -1,6 +1,7 @@
 <h4>Your Tasks: 📌</h4>
 
 <!-- replateo con directivas -->
-<app-task [task]="task1"></app-task>
-<app-task [task]="task2"></app-task>
+<app-task [task]="task1" (delete)="deleteTask($event)"></app-task> 
+<!-- delete is an output & deleteTask is function-->
+<app-task [task]="task2" (delete)="deleteTask($event)"></app-task>
 
