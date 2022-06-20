@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Itask } from 'src/app/models/interfaces/Task.interface';
 
 @Component({
   selector: 'app-task',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskComponent implements OnInit {
 
+    @Input() task : Itask | undefined;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  deleteTask() {
+    console.log("Delete Task", this.task?.title)
+  }
 }

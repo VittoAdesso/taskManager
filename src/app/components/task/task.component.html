@@ -1,1 +1,7 @@
-<p>task works!</p>
+<h5> Title: {{ task?.title }}</h5>
+<h6> Description: {{ task?.description }}</h6>
+
+<!-- to work with boolean one or other condition -->
+<p> ¿It's Completed?  {{ task?.completed ? 'Yes' : 'No'}}</p>
+
+<button (click)="deleteTask()">Delete</button>
