@@ -1,6 +1,12 @@
-# ProyectoA
+# Task Manager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+
+--- 
+
+Used Angular Material 
+
+ng add @angular/material
 
 ## Development server
 
